@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">Get Source Code</string>
+
+    <string-array name="menu">
+        <item>http://</item>
+        <item>https://</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alkalynx.alka.newasyncinternet.MainActivity"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:textSize="21sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Connect To Internet" />
+
+
+    <Spinner
+        android:id="@+id/spinnr"
+        android:layout_below="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:entries="@array/menu">
+
+    </Spinner>
+
+
+    <EditText
+        android:id="@+id/inputan"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/spinnr"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="www.example.com"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/inputan"
+        android:layout_margin="5dp"
+        android:onClick="doSomething"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Tampilkan Kode" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/myResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Code akan tampil disini !"/>
+
+    </ScrollView>
+
+</RelativeLayout>
